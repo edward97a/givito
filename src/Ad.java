@@ -13,6 +13,10 @@ public class Ad {
       return title;
    }
 
+   public int getId() {
+      return id;
+   }
+
    public void setPrice (int price) {
       if (price < 0) {
          System.out.println("Value is negative");

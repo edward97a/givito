@@ -18,6 +18,7 @@ public class Main {
             System.out.println("\n--- MENU ---");
             System.out.println("1: Add Ad");
             System.out.println("2: Show all Ads");
+            System.out.println("3: Delete Ad: Enter ID");
             System.out.println("0: Exit");
             menu = scanner.nextInt();
             scanner.nextLine();
@@ -30,10 +31,26 @@ public class Main {
                     System.out.println("Please enter price");
 
                     AdObjects.add(new Ad(nextId, title, price));
+                    System.out.println("Ad is added");
                     nextId += 1;
                 break;
                 case 2:
                     System.out.println(AdObjects);
+                    break;
+                case 3:
+                    boolean foundId = false;
+                    int deleteId = scanner.nextInt();
+                    for (int i = 0; i <= AdObjects.size() - 1; i++) {
+                        Ad currentAd = AdObjects.get(i);
+                        if (deleteId == currentAd.getId()) {
+                            AdObjects.remove(i);
+                            foundId = true;
+                            System.out.println("Ad with ID " + deleteId + " is deleted");
+                            break;
+                        } }
+                    if (foundId == false) {
+                        System.out.println("AD's id is not found");
+                    }
                     break;
                 case 0:
                     break;
