@@ -67,13 +67,26 @@ public class Main {
     }
 
     public static void searchAds (ArrayList<Ad> AdObjects, String searchText) {
+        boolean found = false;
+        if (AdObjects.isEmpty()) { // empty list check
+            System.out.println("Ad list is empty");
+            return;
+        }
+
+        if (searchText.isBlank()) { // empty input check
+            System.out.println("Please enter title");
+            return;
+        }
         for (int i = 0; i <= AdObjects.size() - 1; i++) {
             Ad currentTitle = AdObjects.get(i);
             String title = currentTitle.getTitle();
 //            if (currentTitle.getTitle().contains(searchText)) {
             if (title.contains(searchText)) {
                 System.out.println(currentTitle);
+                found = true;
             }
+        } if (found == false) {
+            System.out.println("Ad is not found");
         }
     }
 
