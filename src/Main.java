@@ -19,6 +19,7 @@ public class Main {
             System.out.println("1: Add Ad");
             System.out.println("2: Show all Ads");
             System.out.println("3: Delete Ad: Enter ID");
+            System.out.println("4: Search by title");
             System.out.println("0: Exit");
             menu = scanner.nextInt();
             scanner.nextLine();
@@ -52,12 +53,28 @@ public class Main {
                         System.out.println("AD's id is not found");
                     }
                     break;
+                case 4:
+                    System.out.println("Please enter title to find Ad");
+                    String searchText = scanner.nextLine();
+                    searchAds(AdObjects, searchText);
+                    break;
                 case 0:
                     break;
                 default:
                     System.out.println("Incorrect input");
             }
         } while (menu != 0);
+    }
+
+    public static void searchAds (ArrayList<Ad> AdObjects, String searchText) {
+        for (int i = 0; i <= AdObjects.size() - 1; i++) {
+            Ad currentTitle = AdObjects.get(i);
+            String title = currentTitle.getTitle();
+//            if (currentTitle.getTitle().contains(searchText)) {
+            if (title.contains(searchText)) {
+                System.out.println(currentTitle);
+            }
+        }
     }
 
    public static void showAllAds (ArrayList<Ad> AdObjects){
