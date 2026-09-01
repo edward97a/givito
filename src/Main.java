@@ -1,0 +1,55 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+import static java.awt.SystemColor.menu;
+
+public class Main {
+    public static void main (String[] args) {
+//        Ad ad = new Ad (1, "iphone", 2500);
+//        System.out.println(ad);
+
+        ArrayList<Ad> AdObjects = new ArrayList<>();
+        int nextId = 1;
+
+        Scanner scanner = new Scanner(System.in);
+        int menu;
+        do {
+            System.out.println("\n--- MENU ---");
+            System.out.println("1: Add Ad");
+            System.out.println("2: Show all Ads");
+            System.out.println("0: Exit");
+            menu = scanner.nextInt();
+            scanner.nextLine();
+            switch (menu) {
+                case 1:
+                    System.out.println("Please enter Ad's title");
+                    String title = scanner.nextLine();
+
+                    int price = scanner.nextInt();
+                    System.out.println("Please enter price");
+
+                    AdObjects.add(new Ad(nextId, title, price));
+                    nextId += 1;
+                break;
+                case 2:
+                    System.out.println(AdObjects);
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Incorrect input");
+            }
+        } while (menu != 0);
+    }
+
+   public static void showAllAds (ArrayList<Ad> AdObjects){
+        if (AdObjects != null) {
+            for (Ad objects : AdObjects) {
+                System.out.println(objects);
+            }
+        } else {
+            System.out.println("AdObjects list is empty");
+        }
+   }
+}
