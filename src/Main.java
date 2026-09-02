@@ -29,7 +29,7 @@ public class Main {
                     String title = scanner.nextLine();
 
                     int price = scanner.nextInt();
-                    System.out.println("Please enter price");
+                    System.out.println("Please enter price $");
 
                     AdObjects.add(new Ad(nextId, title, price));
                     System.out.println("Ad is added");
@@ -67,6 +67,15 @@ public class Main {
     }
 
     public static void searchAds (ArrayList<Ad> AdObjects, String searchText) {
+        boolean onlyDigits = true;
+        for (int i = 0; i <= searchText.length()- 1 ; i++) {
+            if (Character.isDigit(searchText.charAt(i)) != true) {
+                onlyDigits = false;
+            }
+        } if (onlyDigits == true) {
+            System.out.println("Title cannot contain only numbers");
+            return;
+        }
         boolean found = false;
         if (AdObjects.isEmpty()) { // empty list check
             System.out.println("Ad list is empty");

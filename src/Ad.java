@@ -27,6 +27,6 @@ public class Ad {
 
    @Override
    public String toString() {
-      return "id: " + id + ", title: " + title + ", price: " + price;
+      return "id: " + id + ", title: " + title + ", price: " + price + "$";
    }
 }
