@@ -1,7 +1,7 @@
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 import static java.awt.SystemColor.menu;
 
 public class Main {
@@ -20,6 +20,8 @@ public class Main {
             System.out.println("2: Show all Ads");
             System.out.println("3: Delete Ad: Enter ID");
             System.out.println("4: Search by title");
+            System.out.println("5: Load Ads");
+            System.out.println("6: Save Ads");
             System.out.println("0: Exit");
             menu = scanner.nextInt();
             scanner.nextLine();
@@ -57,6 +59,16 @@ public class Main {
                     System.out.println("Please enter title to find Ad");
                     String searchText = scanner.nextLine();
                     searchAds(AdObjects, searchText);
+                    break;
+                case 5:
+                    System.out.println("Please enter file name to load Ads:");
+                    String enterLoadFilePath = scanner.nextLine();
+                    AdObjects = FileManager.loadAdsFromFile(enterLoadFilePath);
+                    break;
+                case 6:
+                    System.out.println("Please enter file name to save Ads:");
+                    String enterSaveFilePath = scanner.nextLine();
+                    FileManager.saveAdsToFile(AdObjects, enterSaveFilePath);
                     break;
                 case 0:
                     break;

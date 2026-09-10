@@ -9,12 +9,21 @@ public class Ad {
       this.price = price;
    }
 
+   public Ad(){
+
+   }
+
    public String getTitle() {
+
       return title;
    }
 
    public int getId() {
       return id;
+   }
+
+   public int getPrice() {
+      return price;
    }
 
    public void setPrice (int price) {
