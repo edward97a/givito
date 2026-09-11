@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -63,7 +64,12 @@ public class Main {
                 case 5:
                     System.out.println("Please enter file name to load Ads:");
                     String enterLoadFilePath = scanner.nextLine();
+                    try {
                     AdObjects = FileManager.loadAdsFromFile(enterLoadFilePath);
+                        System.out.println("File with ads is successfully loaded");
+                    } catch (IOException e){
+                    System.out.println("Ads load error:" + e.getMessage());
+                }
                     break;
                 case 6:
                     System.out.println("Please enter file name to save Ads:");

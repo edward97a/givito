@@ -16,15 +16,8 @@ public class FileManager {
         }
     }
 
-    public static ArrayList<Ad> loadAdsFromFile(String filepath) {
+    public static ArrayList<Ad> loadAdsFromFile(String filepath) throws IOException {
         File file = new File(filepath);
-
-        try {
-            return objectMapper.readValue(file, new TypeReference<ArrayList<Ad>>() {
-            });
-        } catch (IOException e) {
-            System.out.println("Error load the file" + e.getMessage());
-            return new ArrayList<>();
+            return objectMapper.readValue(file, new TypeReference<ArrayList<Ad>>() {});
         }
     }
-}
