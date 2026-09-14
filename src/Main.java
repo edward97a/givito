@@ -13,6 +13,22 @@ public class Main {
         ArrayList<Ad> AdObjects = new ArrayList<>();
         int nextId = 1;
 
+        try {
+        AdObjects = FileManager.loadAdsFromFile("ads.json");
+            System.out.println("File uploaded");
+            System.out.println(AdObjects.size() + " ads are loaded");
+            int maxIdForAd = 0;
+            for (int i = 0; i <= AdObjects.size() - 1; i++) {
+            int idForAd = AdObjects.get(i).getId();
+            if (idForAd > maxIdForAd) {
+                maxIdForAd = idForAd;
+            }
+            } nextId = maxIdForAd + 1;
+        }
+        catch (IOException e) {
+            System.out.println("File upload failed" + e.getMessage());
+        }
+
         Scanner scanner = new Scanner(System.in);
         int menu;
         do {
@@ -67,6 +83,7 @@ public class Main {
                     try {
                     AdObjects = FileManager.loadAdsFromFile(enterLoadFilePath);
                         System.out.println("File with ads is successfully loaded");
+                        System.out.println(AdObjects.size() + " ads are loaded");
                     } catch (IOException e){
                     System.out.println("Ads load error:" + e.getMessage());
                 }
