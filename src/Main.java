@@ -36,9 +36,10 @@ public class Main {
             System.out.println("1: Add Ad");
             System.out.println("2: Show all Ads");
             System.out.println("3: Delete Ad: Enter ID");
-            System.out.println("4: Search by title");
-            System.out.println("5: Load Ads");
-            System.out.println("6: Save Ads");
+            System.out.println("4: Search by title or ID");
+            System.out.println("5: TEST unkown shit");
+            System.out.println("6: Load Ads");
+            System.out.println("7: Save Ads");
             System.out.println("0: Exit");
             menu = scanner.nextInt();
             scanner.nextLine();
@@ -78,6 +79,9 @@ public class Main {
                     searchAds(AdObjects, searchText);
                     break;
                 case 5:
+                    System.out.println("Please enter ID to find Ad");
+                    int searchID = scanner.nextInt();
+                case 6:
                     System.out.println("Please enter file name to load Ads:");
                     String enterLoadFilePath = scanner.nextLine();
                     try {
@@ -88,12 +92,14 @@ public class Main {
                     System.out.println("Ads load error:" + e.getMessage());
                 }
                     break;
-                case 6:
+                case 7:
                     System.out.println("Please enter file name to save Ads:");
                     String enterSaveFilePath = scanner.nextLine();
                     FileManager.saveAdsToFile(AdObjects, enterSaveFilePath);
                     break;
                 case 0:
+                    String enterSaveFilePathOnExit = scanner.nextLine();
+                    FileManager.saveAdsToFile(AdObjects, enterSaveFilePathOnExit);
                     break;
                 default:
                     System.out.println("Incorrect input");
@@ -107,9 +113,21 @@ public class Main {
             if (Character.isDigit(searchText.charAt(i)) != true) {
                 onlyDigits = false;
             }
-        } if (onlyDigits == true) {
-            System.out.println("Title cannot contain only numbers");
-            return;
+        } if (onlyDigits == true) { // if searchText is number
+            int idNumber = Integer.parseInt(searchText);
+            boolean foundID = false;
+            for (int i = 0; i <= AdObjects.size() - 1; i++) {
+                Ad currentId = AdObjects.get(i);
+                int adId = currentId.getId();
+                if (adId == idNumber) {
+                    foundID = true;
+                    System.out.println(currentId);
+                    return;
+                }
+            } if (foundID == false){
+                System.out.println("Ads ID is not found");
+                return;
+            }
         }
         boolean found = false;
         if (AdObjects.isEmpty()) { // empty list check
