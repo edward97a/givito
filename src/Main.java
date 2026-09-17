@@ -47,9 +47,13 @@ public class Main {
                 case 1:
                     System.out.println("Please enter Ad's title");
                     String title = scanner.nextLine();
+                    while (title.isBlank()) {
+                        System.out.println("Please enter title, it cannot be null");
+                        title = scanner.nextLine();
+                    }
 
-                    int price = scanner.nextInt();
                     System.out.println("Please enter price $");
+                    int price = scanner.nextInt();
 
                     AdObjects.add(new Ad(nextId, title, price));
                     System.out.println("Ad is added");
@@ -101,6 +105,7 @@ public class Main {
                     FileManager.saveAdsToFile(AdObjects, enterSaveFilePath);
                     break;
                 case 0:
+                    System.out.println("Please enter file name to save before exit:");
                     String enterSaveFilePathOnExit = scanner.nextLine();
                     FileManager.saveAdsToFile(AdObjects, enterSaveFilePathOnExit);
                     break;
