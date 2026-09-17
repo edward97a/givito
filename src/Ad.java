@@ -6,7 +6,8 @@ public class Ad {
    public Ad(int id, String title, int price){
       this.id = id;
       this.title = title;
-      this.price = price;
+      setPrice(price);
+//      this.price = price;
    }
 
    public Ad(){
