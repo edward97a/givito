@@ -37,7 +37,7 @@ public class Main {
             System.out.println("2: Show all Ads");
             System.out.println("3: Delete Ad: Enter ID");
             System.out.println("4: Search by title or ID");
-            System.out.println("5: TEST unkown shit");
+            System.out.println("5: Modify Ad");
             System.out.println("6: Load Ads");
             System.out.println("7: Save Ads");
             System.out.println("0: Exit");
@@ -70,17 +70,20 @@ public class Main {
                             break;
                         } }
                     if (foundId == false) {
-                        System.out.println("AD's id is not found");
+                        System.out.println("AD's id is not found:");
                     }
                     break;
                 case 4:
-                    System.out.println("Please enter title to find Ad");
+                    System.out.println("Please enter title to find Ad:");
                     String searchText = scanner.nextLine();
                     searchAds(AdObjects, searchText);
                     break;
                 case 5:
-                    System.out.println("Please enter ID to find Ad");
+                    System.out.println("Please enter Ad ID to modify:");
                     int searchID = scanner.nextInt();
+                    modifyAd(AdObjects, searchID);
+                    System.out.println("AD is modified");
+                    break;
                 case 6:
                     System.out.println("Please enter file name to load Ads:");
                     String enterLoadFilePath = scanner.nextLine();
@@ -160,5 +163,27 @@ public class Main {
         } else {
             System.out.println("AdObjects list is empty");
         }
+   }
+
+   public static void modifyAd (ArrayList<Ad> AdObjects, int adID) {
+        boolean foundID = false;
+       for (int i = 0; i <= AdObjects.size() - 1; i++) {
+           Ad currentObject = AdObjects.get(i);
+           int currentObjectID = currentObject.getId();
+           if (currentObjectID == adID) {
+               foundID = true;
+               System.out.println(currentObject);
+               Scanner scanner = new Scanner(System.in);
+               System.out.println("Enter price:");
+               currentObject.setPrice(scanner.nextInt());
+               scanner.nextLine();
+               System.out.println("Enter title");
+               currentObject.setTitle(scanner.nextLine());
+           }
+
+       }
+       if (foundID == false) {
+           System.out.println("Ad ID is not found");
+       }
    }
 }

@@ -19,10 +19,12 @@ public class Ad {
    }
 
    public int getId() {
+
       return id;
    }
 
    public int getPrice() {
+
       return price;
    }
 
@@ -34,8 +36,13 @@ public class Ad {
       }
    }
 
+   public void setTitle(String title) {
+      this.title = title;
+   }
+
    @Override
    public String toString() {
+
       return "id: " + id + ", title: " + title + ", price: " + price + "$";
    }
 }
