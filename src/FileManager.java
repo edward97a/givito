@@ -3,11 +3,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class FileManager {
     static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static void saveAdsToFile (ArrayList<Ad> AdsObjects, String filepath){
+    public static void saveAdsToFile (List<Ad> AdsObjects, String filepath){
         File file = new File(filepath);
         try {
             objectMapper.writeValue(file, AdsObjects);
@@ -16,8 +17,8 @@ public class FileManager {
         }
     }
 
-    public static ArrayList<Ad> loadAdsFromFile(String filepath) throws IOException {
+    public static List<Ad> loadAdsFromFile(String filepath) throws IOException {
         File file = new File(filepath);
-            return objectMapper.readValue(file, new TypeReference<ArrayList<Ad>>() {});
+            return objectMapper.readValue(file, new TypeReference<List<Ad>>() {});
         }
     }

@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import static java.awt.SystemColor.menu;
 
@@ -10,7 +11,7 @@ public class Main {
 //        Ad ad = new Ad (1, "iphone", 2500);
 //        System.out.println(ad);
 
-        ArrayList<Ad> AdObjects = new ArrayList<>();
+        List<Ad> AdObjects = new ArrayList<>();
         int nextId = 1;
 
         try {
@@ -115,8 +116,9 @@ public class Main {
         } while (menu != 0);
     }
 
-    public static void searchAds (ArrayList<Ad> AdObjects, String searchText) {
+    public static void searchAds (List<Ad> AdObjects, String searchText) {
         boolean onlyDigits = true;
+
         for (int i = 0; i <= searchText.length()- 1 ; i++) {
             if (Character.isDigit(searchText.charAt(i)) != true) {
                 onlyDigits = false;
@@ -160,7 +162,7 @@ public class Main {
         }
     }
 
-   public static void showAllAds (ArrayList<Ad> AdObjects){
+   public static void showAllAds (List<Ad> AdObjects){
         if (AdObjects != null) {
             for (Ad objects : AdObjects) {
                 System.out.println(objects);
@@ -170,7 +172,7 @@ public class Main {
         }
    }
 
-   public static void modifyAd (ArrayList<Ad> AdObjects, int adID) {
+   public static void modifyAd (List<Ad> AdObjects, int adID) {
         boolean foundID = false;
        for (int i = 0; i <= AdObjects.size() - 1; i++) {
            Ad currentObject = AdObjects.get(i);
