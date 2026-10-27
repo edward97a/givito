@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import static java.awt.SystemColor.menu;
+import java.util.Iterator;
 
 public class Main {
     public static void main (String[] args) {
@@ -41,6 +42,7 @@ public class Main {
             System.out.println("5: Modify Ad");
             System.out.println("6: Load Ads");
             System.out.println("7: Save Ads");
+            System.out.println("8: Delete all free ads");
             System.out.println("0: Exit");
             menu = scanner.nextInt();
             scanner.nextLine();
@@ -105,6 +107,14 @@ public class Main {
                     String enterSaveFilePath = scanner.nextLine();
                     FileManager.saveAdsToFile(AdObjects, enterSaveFilePath);
                     break;
+                case 8:
+                    System.out.println("Please confirm Y/N");
+                    Scanner scanner1 = new Scanner(System.in);
+                    String enteredValue = scanner1.nextLine();
+                    if (enteredValue.equalsIgnoreCase("Y")) {
+                        deleteFreeAds(AdObjects);
+                    } else break;
+
                 case 0:
                     System.out.println("Please enter file name to save before exit:");
                     String enterSaveFilePathOnExit = scanner.nextLine();
@@ -170,6 +180,16 @@ public class Main {
         } else {
             System.out.println("AdObjects list is empty");
         }
+   }
+
+   public static void deleteFreeAds (List<Ad> ads) {
+        Iterator<Ad> it = ads.iterator();
+       while (it.hasNext()) {
+           Ad ad = it.next();
+           if (ad.getPrice() <= 0) {
+               it.remove();
+           }
+       }
    }
 
    public static void modifyAd (List<Ad> AdObjects, int adID) {
