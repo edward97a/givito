@@ -1,11 +1,9 @@
 import java.io.IOException;
 import java.sql.SQLOutput;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 import static java.awt.SystemColor.menu;
-import java.util.Iterator;
 
 public class Main {
     public static void main (String[] args) {
@@ -13,6 +11,7 @@ public class Main {
 //        System.out.println(ad);
 
         List<Ad> AdObjects = new ArrayList<>();
+        Map<Integer, Ad> adMap = new HashMap<>();
         int nextId = 1;
 
         try {
