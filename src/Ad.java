@@ -20,7 +20,6 @@ public class Ad {
    }
 
    public int getId() {
-
       return id;
    }
 

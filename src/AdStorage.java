@@ -1,7 +1,7 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util. Map;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+
 public class AdStorage
 {
    private List<Ad> adList;
@@ -12,34 +12,64 @@ public class AdStorage
        adMap = new HashMap<>();
    }
 
-   public void add(Ad ad) {
+   public void addAd(Ad ad) {
+    adList.add(ad);
+    adMap.put(ad.getId(), ad);
    }
 
    public List<Ad> getAllAds() {
-        return null;
+
+       return adList;
    }
 
    public Ad findById(int id) {
-       return null;
+
+       return adMap.get(id);
    }
 
-   public void deleteById(int id) {
-   }
+    public List<Ad> findByTitle(String title) {
+        List<Ad> result = new ArrayList<>();
+        for (int i = 0; i <= adList.size() - 1 ; i++) {
+            if(adList.get(i).getTitle().toLowerCase().contains(title.toLowerCase())) {
+            result.add(adList.get(i));
+            }
+        }
+        return result;
+    }
 
-   public List<Ad> findByTitle(String title) {
-       return null;
+   public boolean deleteById(int id) {
+       for (int i = 0; i <= adList.size() - 1; i++) {
+           int currentId = adList.get(i).getId();
+           if (currentId == id) {
+               adList.remove(i);
+               adMap.remove(id);
+               return true;
+           }
+       }
+       return false;
    }
 
    public void deleteAllFreeAds() {
-
+       Iterator<Ad> it = adList.iterator();
+       while (it.hasNext()) {
+           Ad ad = it.next();
+           if (ad.getPrice() <= 0) {
+               adMap.remove(ad.getId());
+               it.remove();
+           }
+       }
    }
 
-   public void saveAllAds(String filepath) {
-
+   public void saveAllAds(String filepath) throws IOException {
+    FileManager.saveAdsToFile(adList, filepath);
    }
 
-   public void loadAllAds(String filepath) {
-
+   public void loadAllAds(String filepath) throws IOException {
+       List<Ad> newLoadedAds = FileManager.loadAdsFromFile(filepath);
+       adList.clear();
+       adMap.clear();
+       for (int i = 0; i <= newLoadedAds.size() - 1; i++) {
+        addAd(newLoadedAds.get(i));
+       }
    }
-
 }

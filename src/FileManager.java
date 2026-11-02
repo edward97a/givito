@@ -10,13 +10,9 @@ import java.util.Set;
 public class FileManager {
     static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static void saveAdsToFile (List<Ad> AdsObjects, String filepath){
+    public static void saveAdsToFile (List<Ad> AdsObjects, String filepath) throws IOException {
         File file = new File(filepath);
-        try {
             objectMapper.writeValue(file, AdsObjects);
-        } catch (IOException e) {
-            System.out.println("Error read the file:" + e.getMessage());
-        }
     }
 
     public static List<Ad> loadAdsFromFile(String filepath) throws IOException {

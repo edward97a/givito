@@ -74,7 +74,8 @@ public class Main {
                             foundId = true;
                             System.out.println("Ad with ID " + deleteId + " is deleted");
                             break;
-                        } }
+                        }
+                    }
                     if (foundId == false) {
                         System.out.println("AD's id is not found:");
                     }
@@ -124,92 +125,5 @@ public class Main {
             }
         } while (menu != 0);
     }
-
-    public static void searchAds (List<Ad> AdObjects, String searchText) {
-        boolean onlyDigits = true;
-
-        for (int i = 0; i <= searchText.length()- 1 ; i++) {
-            if (Character.isDigit(searchText.charAt(i)) != true) {
-                onlyDigits = false;
-            }
-        } if (onlyDigits == true) { // if searchText is number
-            int idNumber = Integer.parseInt(searchText);
-            boolean foundID = false;
-            for (int i = 0; i <= AdObjects.size() - 1; i++) {
-                Ad currentId = AdObjects.get(i);
-                int adId = currentId.getId();
-                if (adId == idNumber) {
-                    foundID = true;
-                    System.out.println(currentId);
-                    return;
-                }
-            } if (foundID == false){
-                System.out.println("Ads ID is not found");
-                return;
-            }
-        }
-        boolean found = false;
-        if (AdObjects.isEmpty()) { // empty list check
-            System.out.println("Ad list is empty");
-            return;
-        }
-
-        if (searchText.isBlank()) { // empty input check
-            System.out.println("Please enter title");
-            return;
-        }
-        for (int i = 0; i <= AdObjects.size() - 1; i++) {
-            Ad currentTitle = AdObjects.get(i);
-            String title = currentTitle.getTitle();
-//            if (currentTitle.getTitle().contains(searchText)) {
-            if (title.contains(searchText)) {
-                System.out.println(currentTitle);
-                found = true;
-            }
-        } if (found == false) {
-            System.out.println("Ad is not found");
-        }
-    }
-
-   public static void showAllAds (List<Ad> AdObjects){
-        if (AdObjects != null) {
-            for (Ad objects : AdObjects) {
-                System.out.println(objects);
-            }
-        } else {
-            System.out.println("AdObjects list is empty");
-        }
-   }
-
-   public static void deleteFreeAds (List<Ad> ads) {
-        Iterator<Ad> it = ads.iterator();
-       while (it.hasNext()) {
-           Ad ad = it.next();
-           if (ad.getPrice() <= 0) {
-               it.remove();
-           }
-       }
-   }
-
-   public static void modifyAd (List<Ad> AdObjects, int adID) {
-        boolean foundID = false;
-       for (int i = 0; i <= AdObjects.size() - 1; i++) {
-           Ad currentObject = AdObjects.get(i);
-           int currentObjectID = currentObject.getId();
-           if (currentObjectID == adID) {
-               foundID = true;
-               System.out.println(currentObject);
-               Scanner scanner = new Scanner(System.in);
-               System.out.println("Enter price:");
-               currentObject.setPrice(scanner.nextInt());
-               scanner.nextLine();
-               System.out.println("Enter title");
-               currentObject.setTitle(scanner.nextLine());
-           }
-
-       }
-       if (foundID == false) {
-           System.out.println("Ad ID is not found");
-       }
-   }
 }
+
