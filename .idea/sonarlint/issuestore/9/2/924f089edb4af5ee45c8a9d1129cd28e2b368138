@@ -1,86 +1,48 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨È“Êüÿÿÿÿ8àÖ„Œ™4
-s	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ° –ÿÿÿÿÿ8àÖ„Œ™4
-n	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÄå©8àÖ„Œ™4
-s	java:S117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¥Ç¿ùÿÿÿÿ8àÖ„Œ™4
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨È“Êüÿÿÿÿ8òŒğ™4
 7
-java:S1220""Move this file to a named package.8áÖ„Œ™4
-U
-java:S2589’"7Remove this expression which always evaluates to "true"(ÿÉÂñ8„Ø„Œ™4
+java:S1220""Move this file to a named package.8òŒğ™4
 o
-java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Çµí‘8†Ø„Œ™4
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(Çµí‘8¢òŒğ™4
 V
-java:S1854"9Remove this useless assignment to local variable "adMap".(éü…‰8†Ø„Œ™4
+java:S1854"9Remove this useless assignment to local variable "adMap".(éü…‰8¢òŒğ™4
 ]	java:S125
-"<This block of commented-out lines of code should be removed.(ØÖÕÿÿÿÿÿ8‡Ø„Œ™4
+"<This block of commented-out lines of code should be removed.(ØÖÕÿÿÿÿÿ8¢òŒğ™4
 G
-java:S1481"*Remove this unused "adMap" local variable.(éü…‰8ˆØ„Œ™4
-G	java:S106"+Replace this use of System.out by a logger.(‚·Æ¾8ˆØ„Œ™4
-G	java:S106"+Replace this use of System.out by a logger.(¶‹ÛÍ8‰Ø„Œ™4
-G	java:S106"+Replace this use of System.out by a logger.(Æ Õ“8‰Ø„Œ™4
-L	java:S106$"+Replace this use of System.out by a logger.(ßâÂúÿÿÿÿ8‹Ø„Œ™4
-F	java:S106%"+Replace this use of System.out by a logger.(Éª˜p8‹Ø„Œ™4
-L	java:S106&"+Replace this use of System.out by a logger.(ôÜß’ùÿÿÿÿ8‹Ø„Œ™4
-G	java:S106'"+Replace this use of System.out by a logger.(ù³¢è8‹Ø„Œ™4
-G	java:S106("+Replace this use of System.out by a logger.(·ÖÊè8‹Ø„Œ™4
-L	java:S106)"+Replace this use of System.out by a logger.(‰Şİ¡ÿÿÿÿÿ8‹Ø„Œ™4
-G	java:S106*"+Replace this use of System.out by a logger.(öšêí8ŒØ„Œ™4
-L	java:S106+"+Replace this use of System.out by a logger.(ÜáÇëúÿÿÿÿ8ŒØ„Œ™4
-L	java:S106,"+Replace this use of System.out by a logger.(›Ù¢Èúÿÿÿÿ8ŒØ„Œ™4
-L	java:S106-"+Replace this use of System.out by a logger.(ºÓ¯„şÿÿÿÿ8ŒØ„Œ™4
-m	java:S128m"LEnd this switch case with an unconditional break, return or throw statement.(˜Çúÿÿÿÿ8ŒØ„Œ™4
-G	java:S1062"+Replace this use of System.out by a logger.(ÈŸ®¦8Ø„Œ™4
-G	java:S1065"+Replace this use of System.out by a logger.(Şï¨Î8Ø„Œ™4
-L	java:S1069"+Replace this use of System.out by a logger.(ÌëÓÊüÿÿÿÿ8Ø„Œ™4
-G	java:S106="+Replace this use of System.out by a logger.(¦Ÿº8Ø„Œ™4
-L	java:S106A"+Replace this use of System.out by a logger.(Ò…ƒÚüÿÿÿÿ8Ø„Œ™4
-L	java:S106K"+Replace this use of System.out by a logger.(¹²š ùÿÿÿÿ8Ø„Œ™4
+java:S1481"*Remove this unused "adMap" local variable.(éü…‰8£òŒğ™4
+G	java:S106"+Replace this use of System.out by a logger.(‚·Æ¾8¤òŒğ™4
+G	java:S106"+Replace this use of System.out by a logger.(¶‹ÛÍ8¤òŒğ™4
+G	java:S106"+Replace this use of System.out by a logger.(Æ Õ“8¤òŒğ™4
+L	java:S106$"+Replace this use of System.out by a logger.(ßâÂúÿÿÿÿ8¦òŒğ™4
+F	java:S106%"+Replace this use of System.out by a logger.(Éª˜p8¦òŒğ™4
+L	java:S106&"+Replace this use of System.out by a logger.(ôÜß’ùÿÿÿÿ8¦òŒğ™4
+G	java:S106'"+Replace this use of System.out by a logger.(ù³¢è8¦òŒğ™4
+G	java:S106("+Replace this use of System.out by a logger.(·ÖÊè8¦òŒğ™4
+L	java:S106)"+Replace this use of System.out by a logger.(‰Şİ¡ÿÿÿÿÿ8¦òŒğ™4
+G	java:S106*"+Replace this use of System.out by a logger.(öšêí8¦òŒğ™4
+L	java:S106+"+Replace this use of System.out by a logger.(ÜáÇëúÿÿÿÿ8§òŒğ™4
+L	java:S106,"+Replace this use of System.out by a logger.(›Ù¢Èúÿÿÿÿ8§òŒğ™4
+L	java:S106-"+Replace this use of System.out by a logger.(ºÓ¯„şÿÿÿÿ8§òŒğ™4
+m	java:S128n"LEnd this switch case with an unconditional break, return or throw statement.(˜Çúÿÿÿÿ8§òŒğ™4
+G	java:S1062"+Replace this use of System.out by a logger.(ÈŸ®¦8§òŒğ™4
+G	java:S1065"+Replace this use of System.out by a logger.(Şï¨Î8¨òŒğ™4
+L	java:S1069"+Replace this use of System.out by a logger.(ÌëÓÊüÿÿÿÿ8¨òŒğ™4
+G	java:S106="+Replace this use of System.out by a logger.(¦Ÿº8¨òŒğ™4
+L	java:S106A"+Replace this use of System.out by a logger.(Ò…ƒÚüÿÿÿÿ8¨òŒğ™4
+L	java:S106K"+Replace this use of System.out by a logger.(¹²š ùÿÿÿÿ8©òŒğ™4
 D
-java:S1125N"'Remove the unnecessary boolean literal.(Õç’ç8Ø„Œ™4
-G	java:S106O"+Replace this use of System.out by a logger.(•¢Ë®8Ø„Œ™4
-L	java:S106S"+Replace this use of System.out by a logger.(¬Ûşÿÿÿÿ8Ø„Œ™4
-G	java:S106X"+Replace this use of System.out by a logger.(¨‰Î·8Ø„Œ™4
-G	java:S106["+Replace this use of System.out by a logger.(Ş÷ßı8Ø„Œ™4
-L	java:S106^"+Replace this use of System.out by a logger.(Ù¥²¥üÿÿÿÿ8Ø„Œ™4
-L	java:S106b"+Replace this use of System.out by a logger.(´êÀîûÿÿÿÿ8Ø„Œ™4
-G	java:S106c"+Replace this use of System.out by a logger.(¶‹ÛÍ8Ø„Œ™4
-L	java:S106e"+Replace this use of System.out by a logger.(ßöÇ÷üÿÿÿÿ8Ø„Œ™4
-L	java:S106i"+Replace this use of System.out by a logger.(Ìã˜Éøÿÿÿÿ8‘Ø„Œ™4
-L	java:S106n"+Replace this use of System.out by a logger.(›äÄÌıÿÿÿÿ8‘Ø„Œ™4
-L	java:S106v"+Replace this use of System.out by a logger.(ÿ‰¨éıÿÿÿÿ8’Ø„Œ™4
-G	java:S106{"+Replace this use of System.out by a logger.(êŸş8’Ø„Œ™4
-u
-java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(õ° –ÿÿÿÿÿ8“Ø„Œ™4
-Y
-java:S1854";Remove this useless assignment to local variable "foundID".(£¬ùŒ8“Ø„Œ™4
-J
-java:S1125„"'Remove the unnecessary boolean literal.(’’¯ğşÿÿÿÿ8“Ø„Œ™4
-J
-java:S1125‡"'Remove the unnecessary boolean literal.( ²›«üÿÿÿÿ8”Ø„Œ™4
-M	java:S106"+Replace this use of System.out by a logger.(²ëò¦şÿÿÿÿ8”Ø„Œ™4
-E
-java:S1125’"'Remove the unnecessary boolean literal.(ÿÉÂñ8•Ø„Œ™4
-G	java:S106“"+Replace this use of System.out by a logger.(—Û‘s8•Ø„Œ™4
-H	java:S106™"+Replace this use of System.out by a logger.(õ¹Óò8•Ø„Œ™4
-H	java:S106"+Replace this use of System.out by a logger.(³ğÕç8•Ø„Œ™4
-^	java:S125¤"<This block of commented-out lines of code should be removed.(·Äâîÿÿÿÿÿ8–Ø„Œ™4
-M	java:S106¦"+Replace this use of System.out by a logger.(éÊÍÚşÿÿÿÿ8–Ø„Œ™4
-E
-java:S1125©"'Remove the unnecessary boolean literal.(à ¼¨8–Ø„Œ™4
-G	java:S106ª"+Replace this use of System.out by a logger.(êŸÃv8–Ø„Œ™4
-M	java:S106±"+Replace this use of System.out by a logger.(“–àúÿÿÿÿ8–Ø„Œ™4
-H	java:S106´"+Replace this use of System.out by a logger.(Ø¦»š8—Ø„Œ™4
-M	java:S106É"+Replace this use of System.out by a logger.(Ê®§ƒüÿÿÿÿ8˜Ø„Œ™4
-M	java:S106Ë"+Replace this use of System.out by a logger.(”ÈçÛùÿÿÿÿ8˜Ø„Œ™4
-H	java:S106Î"+Replace this use of System.out by a logger.(¹¨Šá8™Ø„Œ™4
-J
-java:S1125Ó"'Remove the unnecessary boolean literal.(ß†ı›ùÿÿÿÿ8™Ø„Œ™4
-H	java:S106Ô"+Replace this use of System.out by a logger.(¹¢Î8™Ø„Œ™4
-Q
-java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8™Ø„Œ™4
-e
-java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8™Ø„Œ™4
-X
-java:S1128"6Remove this unused import 'java.awt.SystemColor.menu'.(Ôæ·“ÿÿÿÿÿ8™Ø„Œ™4
+java:S1125O"'Remove the unnecessary boolean literal.(Õç’ç8©òŒğ™4
+G	java:S106P"+Replace this use of System.out by a logger.(•¢Ë®8©òŒğ™4
+L	java:S106T"+Replace this use of System.out by a logger.(¬Ûşÿÿÿÿ8©òŒğ™4
+G	java:S106Y"+Replace this use of System.out by a logger.(¨‰Î·8©òŒğ™4
+G	java:S106\"+Replace this use of System.out by a logger.(Ş÷ßı8ªòŒğ™4
+L	java:S106_"+Replace this use of System.out by a logger.(Ù¥²¥üÿÿÿÿ8ªòŒğ™4
+L	java:S106c"+Replace this use of System.out by a logger.(´êÀîûÿÿÿÿ8ªòŒğ™4
+G	java:S106d"+Replace this use of System.out by a logger.(¶‹ÛÍ8ªòŒğ™4
+L	java:S106f"+Replace this use of System.out by a logger.(ßöÇ÷üÿÿÿÿ8ªòŒğ™4
+L	java:S106j"+Replace this use of System.out by a logger.(Ìã˜Éøÿÿÿÿ8ªòŒğ™4
+L	java:S106o"+Replace this use of System.out by a logger.(›äÄÌıÿÿÿÿ8«òŒğ™4
+L	java:S106w"+Replace this use of System.out by a logger.(ÿ‰¨éıÿÿÿÿ8«òŒğ™4
+G	java:S106|"+Replace this use of System.out by a logger.(êŸş8«òŒğ™4
 ä
-java:S6541	"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 110 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 24 to 6.(Çµí‘8šØ„Œ™4
+java:S6541	"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 111 to 64, Complexity from 18 to 14, Nesting Level from 4 to 2, Number of Variables from 24 to 6.(Çµí‘8¬òŒğ™4

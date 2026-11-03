@@ -1,5 +1,9 @@
 
-0
-java:S1220""Move this file to a named package.
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(‹”¬žüÿÿÿÿ
+7
+java:S1220""Move this file to a named package.8§ëÏå™4
+K
+java:S5413,")Verify that "remove()" is used correctly.(“ÍÛØÿÿÿÿÿ8±ëÏå™4
+ˆ
+java:S1130?"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(µÁ´.8²ëÏå™4
+F
+java:S1128")Remove this unused import 'java.io.File'.(†Ð¥Å8±²œæ™4

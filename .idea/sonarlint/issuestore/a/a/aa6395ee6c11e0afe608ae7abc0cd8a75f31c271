@@ -1,0 +1,28 @@
+
+7
+java:S1220""Move this file to a named package.8Κλπ™4
+L	java:S106"+Replace this use of System.out by a logger.(Κ®§ƒόÿÿÿÿ8Ολπ™4
+L	java:S106"+Replace this use of System.out by a logger.(”ΘηΫωÿÿÿÿ8Ολπ™4
+G	java:S106"+Replace this use of System.out by a logger.(Ή¨α8Ολπ™4
+I
+java:S1125"'Remove the unnecessary boolean literal.(ί†ύ›ωÿÿÿÿ8Πλπ™4
+G	java:S106"+Replace this use of System.out by a logger.(ΉΆΞ8Πλπ™4
+t
+java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ξ¬΄§ψÿÿÿÿ8Πλπ™4
+X
+java:S1854/";Remove this useless assignment to local variable "foundID".(£¬ω8Πλπ™4
+I
+java:S1125%"'Remove the unnecessary boolean literal.(’’―πώÿÿÿÿ8Ρλπ™4
+I
+java:S1125("'Remove the unnecessary boolean literal.( ²›«όÿÿÿÿ8Ρλπ™4
+L	java:S1060"+Replace this use of System.out by a logger.(²λς¦ώÿÿÿÿ8Òλπ™4
+D
+java:S11253"'Remove the unnecessary boolean literal.(ÿΙΒρ8Òλπ™4
+F	java:S1064"+Replace this use of System.out by a logger.(—Ϋ‘s8Òλπ™4
+G	java:S106:"+Replace this use of System.out by a logger.(υΉΣς8Òλπ™4
+G	java:S106?"+Replace this use of System.out by a logger.(³πΥη8Òλπ™4
+]	java:S125E"<This block of commented-out lines of code should be removed.(·Δβξÿÿÿÿÿ8Σλπ™4
+L	java:S106G"+Replace this use of System.out by a logger.(ιΚΝΪώÿÿÿÿ8Σλπ™4
+D
+java:S1125J"'Remove the unnecessary boolean literal.(ΰ Ό¨8Σλπ™4
+F	java:S106K"+Replace this use of System.out by a logger.(κΓv8Σλπ™4

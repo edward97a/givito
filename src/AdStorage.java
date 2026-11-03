@@ -64,12 +64,16 @@ public class AdStorage
     FileManager.saveAdsToFile(adList, filepath);
    }
 
-   public void loadAllAds(String filepath) throws IOException {
-       List<Ad> newLoadedAds = FileManager.loadAdsFromFile(filepath);
-       adList.clear();
-       adMap.clear();
-       for (int i = 0; i <= newLoadedAds.size() - 1; i++) {
-        addAd(newLoadedAds.get(i));
+   public void loadAllAds(String filepath) {
+       try {
+           List<Ad> newLoadedAds = FileManager.loadAdsFromFile(filepath);
+           adList.clear();
+           adMap.clear();
+           for (int i = 0; i <= newLoadedAds.size() - 1; i++) {
+               addAd(newLoadedAds.get(i));
+           }
+       } catch (IOException e) {
+           System.out.println("File cannot be loaded" + e.getMessage());
        }
    }
 }

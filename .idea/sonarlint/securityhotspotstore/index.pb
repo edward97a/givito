@@ -9,3 +9,5 @@ D
 src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
 B
 src/AdStorage.java,0\c\0c8505a87268fbfe021efe64861a140abd6c15fd
+D
+src/ConsoleView.java,a\a\aa6395ee6c11e0afe608ae7abc0cd8a75f31c271
