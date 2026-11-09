@@ -26,11 +26,13 @@ public class FileManager {
                 maxIdcount = currentId;
             }
         }
-            for (int i = 0; i <= loadedAds.size() - 1; i++) {
+        for (int i = 0; i <= loadedAds.size() - 1; i++) {
                 boolean idcheck = unicIdCheck.add(loadedAds.get(i).getId());
                 if (!idcheck) {
                     maxIdcount += 1;
-                    loadedAds.get(i).setId(maxIdcount);
+                    Ad newId = new Ad(maxIdcount, loadedAds.get(i).getTitle(), loadedAds.get(i).getPrice());
+                    loadedAds.set(i, newId);
+//                    loadedAds.get(i).setId(maxIdcount);
                 }
         }
             return loadedAds;

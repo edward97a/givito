@@ -1,9 +1,8 @@
 
 7
-java:S1220""Move this file to a named package.8§ëÏå™4
+java:S1220""Move this file to a named package.8¾õõ–š4
 K
-java:S5413,")Verify that "remove()" is used correctly.(“ÍÛØÿÿÿÿÿ8±ëÏå™4
-ˆ
-java:S1130?"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(µÁ´.8²ëÏå™4
+java:S5413,")Verify that "remove()" is used correctly.(“ÍÛØÿÿÿÿÿ8Òõõ–š4
+G	java:S106L"+Replace this use of System.out by a logger.(ñöŸë8Õõõ–š4
 F
-java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8±²œæ™4
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8Õõõ–š4

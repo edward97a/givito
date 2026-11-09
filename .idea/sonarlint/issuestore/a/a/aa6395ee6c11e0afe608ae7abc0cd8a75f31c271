@@ -1,28 +1,72 @@
 
 7
-java:S1220""Move this file to a named package.8Êëğ™4
-L	java:S106"+Replace this use of System.out by a logger.(Ê®§ƒüÿÿÿÿ8Ïëğ™4
-L	java:S106"+Replace this use of System.out by a logger.(”ÈçÛùÿÿÿÿ8Ïëğ™4
-G	java:S106"+Replace this use of System.out by a logger.(¹¨Šá8Ïëğ™4
-I
-java:S1125"'Remove the unnecessary boolean literal.(ß†ı›ùÿÿÿÿ8Ğëğ™4
-G	java:S106"+Replace this use of System.out by a logger.(¹¢Î8Ğëğ™4
+java:S1220""Move this file to a named package.8ë³“—š4
+U
+java:S2589Ö"7Remove this expression which always evaluates to "true"(ÿÉÂñ8£µ“—š4
 t
-java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Î¬´§øÿÿÿÿ8Ğëğ™4
-X
-java:S1854/";Remove this useless assignment to local variable "foundID".(£¬ùŒ8Ğëğ™4
-I
-java:S1125%"'Remove the unnecessary boolean literal.(’’¯ğşÿÿÿÿ8Ñëğ™4
-I
-java:S1125("'Remove the unnecessary boolean literal.( ²›«üÿÿÿÿ8Ñëğ™4
-L	java:S1060"+Replace this use of System.out by a logger.(²ëò¦şÿÿÿÿ8Òëğ™4
-D
-java:S11253"'Remove the unnecessary boolean literal.(ÿÉÂñ8Òëğ™4
-F	java:S1064"+Replace this use of System.out by a logger.(—Û‘s8Òëğ™4
-G	java:S106:"+Replace this use of System.out by a logger.(õ¹Óò8Òëğ™4
-G	java:S106?"+Replace this use of System.out by a logger.(³ğÕç8Òëğ™4
-]	java:S125E"<This block of commented-out lines of code should be removed.(·Äâîÿÿÿÿÿ8Óëğ™4
-L	java:S106G"+Replace this use of System.out by a logger.(éÊÍÚşÿÿÿÿ8Óëğ™4
-D
-java:S1125J"'Remove the unnecessary boolean literal.(à ¼¨8Óëğ™4
-F	java:S106K"+Replace this use of System.out by a logger.(êŸÃv8Óëğ™4
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 52 to the 15 allowed.(·”ÑÏúÿÿÿÿ8¨µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(ßâÂúÿÿÿÿ8¨µ“—š4
+F	java:S106"+Replace this use of System.out by a logger.(Éª˜p8¨µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(ôÜß’ùÿÿÿÿ8©µ“—š4
+G	java:S106"+Replace this use of System.out by a logger.(ù³¢è8©µ“—š4
+G	java:S106"+Replace this use of System.out by a logger.(·ÖÊè8©µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(‰Şİ¡ÿÿÿÿÿ8©µ“—š4
+G	java:S106"+Replace this use of System.out by a logger.(öšêí8©µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(ÜáÇëúÿÿÿÿ8©µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(›Ù¢Èúÿÿÿÿ8©µ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(ºÓ¯„şÿÿÿÿ8©µ“—š4
+G	java:S106"+Replace this use of System.out by a logger.(êŸş8ªµ“—š4
+G	java:S106("+Replace this use of System.out by a logger.(ÈŸ®¦8«µ“—š4
+G	java:S106+"+Replace this use of System.out by a logger.(Şï¨Î8«µ“—š4
+L	java:S106/"+Replace this use of System.out by a logger.(ÌëÓÊüÿÿÿÿ8«µ“—š4
+L	java:S1062"+Replace this use of System.out by a logger.(Ï¬Íüÿÿÿÿ8«µ“—š4
+G	java:S106@"+Replace this use of System.out by a logger.(¦Ÿº8¬µ“—š4
+G	java:S106H"+Replace this use of System.out by a logger.(õ¹Óò8­µ“—š4
+L	java:S106K"+Replace this use of System.out by a logger.(ùáß˜şÿÿÿÿ8­µ“—š4
+L	java:S106R"+Replace this use of System.out by a logger.(Î£„îıÿÿÿÿ8­µ“—š4
+L	java:S106U"+Replace this use of System.out by a logger.(ÈÙİ†úÿÿÿÿ8­µ“—š4
+L	java:S106\"+Replace this use of System.out by a logger.(¹²š ùÿÿÿÿ8­µ“—š4
+L	java:S106^"+Replace this use of System.out by a logger.(©· ìûÿÿÿÿ8­µ“—š4
+G	java:S106d"+Replace this use of System.out by a logger.(¢°…¤8®µ“—š4
+G	java:S106k"+Replace this use of System.out by a logger.(¨‰Î·8®µ“—š4
+L	java:S106n"+Replace this use of System.out by a logger.(ÈÙİ†úÿÿÿÿ8®µ“—š4
+L	java:S106x"+Replace this use of System.out by a logger.(Ù¥²¥üÿÿÿÿ8®µ“—š4
+L	java:S106|"+Replace this use of System.out by a logger.(´êÀîûÿÿÿÿ8µµ“—š4
+F	java:S106}"+Replace this use of System.out by a logger.(‡÷æ88µµ“—š4
+L	java:S106"+Replace this use of System.out by a logger.(ßöÇ÷üÿÿÿÿ8µµ“—š4
+M	java:S106…"+Replace this use of System.out by a logger.(Ìã˜Éøÿÿÿÿ8µµ“—š4
+M	java:S106‰"+Replace this use of System.out by a logger.(´¼Å§şÿÿÿÿ8¶µ“—š4
+M	java:S106‹"+Replace this use of System.out by a logger.(Úõ¥Ñÿÿÿÿÿ8¶µ“—š4
+M	java:S106‘"+Replace this use of System.out by a logger.(›äÄÌıÿÿÿÿ8¶µ“—š4
+H	java:S106•"+Replace this use of System.out by a logger.(Œ÷Í«8¶µ“—š4
+M	java:S106›"+Replace this use of System.out by a logger.(ÿ‰¨éıÿÿÿÿ8¶µ“—š4
+M	java:S106 "+Replace this use of System.out by a logger.(´¼Å§şÿÿÿÿ8·µ“—š4
+M	java:S106¢"+Replace this use of System.out by a logger.(Úõ¥Ñÿÿÿÿÿ8·µ“—š4
+H	java:S106©"+Replace this use of System.out by a logger.(êŸş8·µ“—š4
+M	java:S106¶"+Replace this use of System.out by a logger.(Ê®§ƒüÿÿÿÿ8¸µ“—š4
+M	java:S106·"+Replace this use of System.out by a logger.(”ÈçÛùÿÿÿÿ8¸µ“—š4
+H	java:S106º"+Replace this use of System.out by a logger.(¹¨Šá8¸µ“—š4
+J
+java:S1125¾"'Remove the unnecessary boolean literal.(ß†ı›ùÿÿÿÿ8¹µ“—š4
+H	java:S106¿"+Replace this use of System.out by a logger.(¹¢Î8¹µ“—š4
+u
+java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Î¬´§øÿÿÿÿ8¹µ“—š4
+Y
+java:S1854Ò";Remove this useless assignment to local variable "foundID".(£¬ùŒ8¹µ“—š4
+J
+java:S1125È"'Remove the unnecessary boolean literal.(’’¯ğşÿÿÿÿ8ºµ“—š4
+J
+java:S1125Ë"'Remove the unnecessary boolean literal.( ²›«üÿÿÿÿ8ºµ“—š4
+M	java:S106Ó"+Replace this use of System.out by a logger.(²ëò¦şÿÿÿÿ8»µ“—š4
+E
+java:S1125Ö"'Remove the unnecessary boolean literal.(ÿÉÂñ8»µ“—š4
+G	java:S106×"+Replace this use of System.out by a logger.(—Û‘s8»µ“—š4
+H	java:S106İ"+Replace this use of System.out by a logger.(õ¹Óò8»µ“—š4
+H	java:S106â"+Replace this use of System.out by a logger.(³ğÕç8»µ“—š4
+^	java:S125è"<This block of commented-out lines of code should be removed.(·Äâîÿÿÿÿÿ8¼µ“—š4
+M	java:S106ê"+Replace this use of System.out by a logger.(éÊÍÚşÿÿÿÿ8¼µ“—š4
+E
+java:S1125í"'Remove the unnecessary boolean literal.(à ¼¨8¼µ“—š4
+G	java:S106î"+Replace this use of System.out by a logger.(êŸÃv8¼µ“—š4
+é
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 141 to 64, Complexity from 23 to 14, Nesting Level from 4 to 2, Number of Variables from 16 to 6.(·”ÑÏúÿÿÿÿ8½µ“—š4

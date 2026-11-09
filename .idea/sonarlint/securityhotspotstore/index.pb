@@ -11,3 +11,8 @@ B
 src/AdStorage.java,0\c\0c8505a87268fbfe021efe64861a140abd6c15fd
 D
 src/ConsoleView.java,a\a\aa6395ee6c11e0afe608ae7abc0cd8a75f31c271
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+<
+DECISIONS.md,1\a\1a8341e0f92d152b0d355a126162ffa7b1e69d77

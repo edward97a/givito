@@ -23,9 +23,10 @@ public class Ad {
       return id;
    }
 
-   public void setId(int id){
-      this.id = id;
-   }
+//   public void setId(int id){
+//
+//      this.id = id;
+//   }
 
    public int getPrice() {
 
