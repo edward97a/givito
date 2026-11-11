@@ -200,22 +200,19 @@ public class ConsoleView {
             if (Character.isDigit(searchText.charAt(i)) != true) {
                 onlyDigits = false;
             }
-        } if (onlyDigits == true) { // if searchText is number
-            int idNumber = Integer.parseInt(searchText);
-            boolean foundID = false;
-            for (int i = 0; i <= ad.size() - 1; i++) {
-                Ad currentId = ad.get(i);
-                int adId = currentId.getId();
-                if (adId == idNumber) {
-                    foundID = true;
-                    System.out.println(currentId);
-                    return;
-                }
-            } if (foundID == false){
-                System.out.println("Ads ID is not found");
-                return;
-            }
         }
+
+        if (onlyDigits == true) {
+            int idNumber = Integer.parseInt(searchText);
+            try {
+                Ad foundId = storage.findById(idNumber);
+                System.out.println(foundId);
+            } catch (AdNotFoundException e) {
+                System.out.println("Ads ID is not found");
+            }
+            return;
+        }
+
         boolean found = false;
         if (ad.isEmpty()) { // empty list check
             System.out.println("Ad list is empty");

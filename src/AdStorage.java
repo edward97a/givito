@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
@@ -23,8 +25,11 @@ public class AdStorage
    }
 
    public Ad findById(int id) {
-
+       if (adMap.get(id) == null) {
+           throw new AdNotFoundException(id + " " + "is missing");
+       }
        return adMap.get(id);
+
    }
 
     public List<Ad> findByTitle(String title) {
