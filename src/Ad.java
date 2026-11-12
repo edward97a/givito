@@ -51,3 +51,5 @@ public class Ad {
       return "id: " + id + ", title: " + title + ", price: " + price + "$";
    }
 }
+
+//test
