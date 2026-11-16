@@ -16,3 +16,13 @@ D
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 <
 DECISIONS.md,1\a\1a8341e0f92d152b0d355a126162ffa7b1e69d77
+L
+src/AdNotFoundException.java,f\b\fb15b6486b0b37298984238290011b93a2e7f815
+H
+src/GivitoException.java,9\8\9843d4db264b03c2c61cf3776a50ff418214cb17
+B
+src/AddAction.java,b\7\b7dd33f3bf9f18cac18cbe16782dcdfda75f66a4
+E
+src/DeleteAction.java,2\5\258a3d92f4feb9a1dde10af95a399ef72da4d336
+C
+src/MenuAction.java,e\e\eedb7c207d935f23e0c2239fd029750cb009caea

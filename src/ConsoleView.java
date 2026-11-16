@@ -11,6 +11,7 @@ public class ConsoleView {
     }
     private int nextId = 1;
 
+    AddAction addAction = new AddAction();
     public void showMenu() {
         int menu = -1;
         do {
@@ -37,33 +38,36 @@ public class ConsoleView {
 
             switch (menu) {
                 case 1: {
-                    System.out.println("Please enter Ad's title");
-                    String title = scanner.nextLine();
-                    while (title.isBlank()) {
-                        System.out.println("Please enter title, it cannot be null");
-                        title = scanner.nextLine();
-                    }
-
-                    System.out.println("Please enter price $");
-                    if (!scanner.hasNextInt()) {
-                        scanner.nextLine();
-                        System.out.println("Price must be a number");
-                        break;
-                    }
-                    int price = scanner.nextInt();
-                    scanner.nextLine();
-
-                    // nextId должен быть больше любого существующего id
-                    for (Ad ad : storage.getAllAds()) {
-                        if (ad.getId() >= nextId) {
-                            nextId = ad.getId() + 1;
-                        }
-                    }
-
-                    storage.addAd(new Ad(nextId, title, price));
-                    System.out.println("Ad is added");
-                    nextId += 1;
+                    addAction.execute();
                     break;
+
+//                    System.out.println("Please enter Ad's title");
+//                    String title = scanner.nextLine();
+//                    while (title.isBlank()) {
+//                        System.out.println("Please enter title, it cannot be null");
+//                        title = scanner.nextLine();
+//                    }
+//
+//                    System.out.println("Please enter price $");
+//                    if (!scanner.hasNextInt()) {
+//                        scanner.nextLine();
+//                        System.out.println("Price must be a number");
+//                        break;
+//                    }
+//                    int price = scanner.nextInt();
+//                    scanner.nextLine();
+//
+//                    // nextId должен быть больше любого существующего id
+//                    for (Ad ad : storage.getAllAds()) {
+//                        if (ad.getId() >= nextId) {
+//                            nextId = ad.getId() + 1;
+//                        }
+//                    }
+//
+//                    storage.addAd(new Ad(nextId, title, price));
+//                    System.out.println("Ad is added");
+//                    nextId += 1;
+//                    break;
                 }
 
                 case 2: {
