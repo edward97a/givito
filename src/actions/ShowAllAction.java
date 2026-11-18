@@ -1,5 +1,6 @@
 package actions;
 
+import model.Ad;
 import storage.AdStorage;
 
 import java.util.List;
@@ -8,7 +9,7 @@ public class ShowAllAction extends MenuAction {
     private AdStorage storage;
 
    public ShowAllAction(AdStorage storage) {
-       super("Show all ads");
+       super("2: Show all ads");
        this.storage = storage;
    }
 

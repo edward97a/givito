@@ -8,7 +8,7 @@ public class DeleteAction extends MenuAction {
     private AdStorage storage;
     private Scanner scanner;
     public DeleteAction(Scanner scanner, AdStorage storage) {
-        super("Delete model.Ad");
+        super("3: Delete Ad");
         this.storage = storage;
         this.scanner = scanner;
     }

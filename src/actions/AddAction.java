@@ -11,7 +11,7 @@ public class AddAction extends MenuAction {
     private int nextId = 1;
 
     public AddAction(Scanner scanner, AdStorage storage) {
-        super("Add action");
+        super("1: Add Ad");
         this.scanner = scanner;
         this.storage = storage;
 
