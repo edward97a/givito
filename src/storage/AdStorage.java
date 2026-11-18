@@ -1,6 +1,8 @@
-import org.w3c.dom.ls.LSOutput;
+package storage;
 
-import java.io.File;
+import exceptions.AdNotFoundException;
+import model.Ad;
+
 import java.io.IOException;
 import java.util.*;
 

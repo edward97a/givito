@@ -1,3 +1,5 @@
+package model;
+
 public class Ad {
    private int id;
    private String title;

@@ -1,28 +1,42 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-;
-src/Ad.java,c\1\c1c7ef0151ddc114b05c295b5dccd67b68739be7
-D
-src/FileManager.java,b\e\bee340f52a8976d24428faf6e2180ab3f576c2f5
 =
 src/Main.java,9\2\924f089edb4af5ee45c8a9d1129cd28e2b368138
-B
-src/AdStorage.java,0\c\0c8505a87268fbfe021efe64861a140abd6c15fd
-D
-src/ConsoleView.java,a\a\aa6395ee6c11e0afe608ae7abc0cd8a75f31c271
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 <
 DECISIONS.md,1\a\1a8341e0f92d152b0d355a126162ffa7b1e69d77
 L
-src/AdNotFoundException.java,f\b\fb15b6486b0b37298984238290011b93a2e7f815
-H
-src/GivitoException.java,9\8\9843d4db264b03c2c61cf3776a50ff418214cb17
-B
-src/AddAction.java,b\7\b7dd33f3bf9f18cac18cbe16782dcdfda75f66a4
-E
-src/DeleteAction.java,2\5\258a3d92f4feb9a1dde10af95a399ef72da4d336
-C
-src/MenuAction.java,e\e\eedb7c207d935f23e0c2239fd029750cb009caea
+src/storage/FileManager.java,2\1\21c140400aa5eb9c607ee453b31c96e2996a4ba8
+W
+'src/exceptions/AdNotFoundException.java,d\4\d4a95b2d0d2f26f7afbb8af4fe422129b3cd1c87
+S
+#src/exceptions/GivitoException.java,3\5\35153b027dd635386cc34411ba967c759cdab99b
+J
+src/storage/AdStorage.java,5\3\5353c85934bec003faebdcf76af7fb6d6b7a4983
+A
+src/model/Ad.java,2\4\24518ffd3f9780a94fde738a6f383555074c1b7b
+N
+src/actions/SaveAdsAction.java,3\8\3829a47c1fa8346c6cf78c0dd7d2c48e340967db
+O
+src/actions/SearchAdAction.java,b\8\b832ac1d3bb1b7ab68f2ddd6bec4c965a1486c5c
+N
+src/actions/ShowAllAction.java,f\9\f96edd8efb5518f8c100390b67822199555e3a78
+J
+src/actions/AddAction.java,1\3\1320a5deeccd2273f0cd82da5b6b6bd7ffd2fda7
+I
+src/view/ConsoleView.java,6\8\6873fe9e0b945319de2ba5700619fc6f899d05b8
+M
+src/actions/DeleteAction.java,1\8\18a6fb0458b8fa681ce2bf517fcfa7a8e1199bec
+T
+$src/actions/DeleteAllFreeAction.java,c\f\cfcc02a28d488637714699829a4340a992d79514
+K
+src/actions/ExitAction.java,2\4\24c30461a3e4b0e56e3740fe693109009a71525e
+N
+src/actions/LoadAdsAction.java,e\7\e76e22ea54283966bc6782cf64f407e87feafdd0
+K
+src/actions/MenuAction.java,1\6\16a47a66563b48115796e966311b76028e59a60f
+O
+src/actions/ModifyAdAction.java,8\8\8859df292f9d03f0bacd61b3bfa89d553a00561e
