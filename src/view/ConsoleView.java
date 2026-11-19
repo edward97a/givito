@@ -16,7 +16,7 @@ public class ConsoleView {
     }
 
     public void showMenu() {
-        List<MenuAction> actions = new ArrayList<>();
+        final List<MenuAction> actions = new ArrayList<>();
         actions.add(new AddAction(scanner, storage));
         actions.add(new ShowAllAction(storage));
         actions.add(new DeleteAction(scanner, storage));

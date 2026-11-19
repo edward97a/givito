@@ -6,6 +6,8 @@ import model.Ad;
 import java.io.IOException;
 import java.util.*;
 
+import static java.util.Collections.unmodifiableList;
+
 public class AdStorage
 {
    private List<Ad> adList;
@@ -24,7 +26,7 @@ public class AdStorage
 
    public List<Ad> getAllAds() {
 
-       return adList;
+       return unmodifiableList(adList);
    }
 
    public Ad findById(int id) {
