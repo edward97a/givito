@@ -10,6 +10,7 @@ public class AdStorage
 {
    private List<Ad> adList;
    private Map<Integer, Ad> adMap;
+   FileManager filemanager = new FileManager();
 
    public AdStorage () {
        adList = new ArrayList<>();
@@ -68,12 +69,12 @@ public class AdStorage
    }
 
    public void saveAllAds(String filepath) throws IOException {
-    FileManager.saveAdsToFile(adList, filepath);
+    filemanager.saveAdsToFile(adList, filepath);
    }
 
    public void loadAllAds(String filepath) {
        try {
-           List<Ad> newLoadedAds = FileManager.loadAdsFromFile(filepath);
+           List<Ad> newLoadedAds = filemanager.loadAdsFromFile(filepath);
            adList.clear();
            adMap.clear();
            for (int i = 0; i <= newLoadedAds.size() - 1; i++) {

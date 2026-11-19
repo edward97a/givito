@@ -20,8 +20,6 @@ A
 src/model/Ad.java,2\4\24518ffd3f9780a94fde738a6f383555074c1b7b
 N
 src/actions/SaveAdsAction.java,3\8\3829a47c1fa8346c6cf78c0dd7d2c48e340967db
-O
-src/actions/SearchAdAction.java,b\8\b832ac1d3bb1b7ab68f2ddd6bec4c965a1486c5c
 N
 src/actions/ShowAllAction.java,f\9\f96edd8efb5518f8c100390b67822199555e3a78
 J
@@ -38,5 +36,7 @@ N
 src/actions/LoadAdsAction.java,e\7\e76e22ea54283966bc6782cf64f407e87feafdd0
 K
 src/actions/MenuAction.java,1\6\16a47a66563b48115796e966311b76028e59a60f
-O
-src/actions/ModifyAdAction.java,8\8\8859df292f9d03f0bacd61b3bfa89d553a00561e
+M
+src/actions/ModifyAction.java,c\8\c8868952113718b75be84539a59d6a9578155ae5
+M
+src/actions/SearchAction.java,b\7\b70fa9a06b6da1d1f39ef06469ba343609a27769

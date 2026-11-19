@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.Set;
 
 public class FileManager {
-    static ObjectMapper objectMapper = new ObjectMapper();
+    ObjectMapper objectMapper = new ObjectMapper();
 
-    public static void saveAdsToFile (List<Ad> AdsObjects, String filepath) throws IOException {
+    public void saveAdsToFile (List<Ad> AdsObjects, String filepath) throws IOException {
         File file = new File(filepath);
             objectMapper.writeValue(file, AdsObjects);
     }
 
-    public static List<Ad> loadAdsFromFile(String filepath) throws IOException {
+    public List<Ad> loadAdsFromFile(String filepath) throws IOException {
         File file = new File(filepath);
             List<Ad> loadedAds = objectMapper.readValue(file, new TypeReference<List<Ad>>() {});
             Set<Integer> unicIdCheck = new HashSet<>();
@@ -36,7 +36,6 @@ public class FileManager {
                     maxIdcount += 1;
                     Ad newId = new Ad(maxIdcount, loadedAds.get(i).getTitle(), loadedAds.get(i).getPrice());
                     loadedAds.set(i, newId);
-//                    loadedAds.get(i).setId(maxIdcount);
                 }
         }
             return loadedAds;

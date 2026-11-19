@@ -16,8 +16,7 @@ public class ExitAction extends MenuAction {
         String enterSaveFilePathOnExit = scanner.nextLine();
         if (!enterSaveFilePathOnExit.isBlank()) {
             try {
-                // Тут нужен storage, если хочешь сохранять.
-                // Пока просто выходим.
+                // we need storage here
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
             }
