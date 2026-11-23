@@ -40,3 +40,5 @@ M
 src/actions/ModifyAction.java,c\8\c8868952113718b75be84539a59d6a9578155ae5
 M
 src/actions/SearchAction.java,b\7\b70fa9a06b6da1d1f39ef06469ba343609a27769
+I
+src/model/AdCategory.java,5\e\5e905e08c5d34bae0443599370035dd337de401a

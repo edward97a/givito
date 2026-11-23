@@ -1,25 +1,25 @@
 package actions;
 
 import model.Ad;
+import model.AdCategory;
 import storage.AdStorage;
-
 import java.util.Scanner;
 
 public class AddAction extends MenuAction {
     private Scanner scanner;
     private AdStorage storage;
     private int nextId = 1;
+    private AdCategory adcategory;
 
     public AddAction(Scanner scanner, AdStorage storage) {
         super("1: Add Ad");
         this.scanner = scanner;
         this.storage = storage;
-
     }
 
     @Override
     public void execute() {
-        System.out.println("Please enter model.Ad's title");
+        System.out.println("Please enter Ad's title");
         String title = scanner.nextLine();
         while (title.isBlank()) {
             System.out.println("Please enter title, it cannot be null");
@@ -35,6 +35,18 @@ public class AddAction extends MenuAction {
         int price = scanner.nextInt();
         scanner.nextLine();
 
+
+        System.out.println("Please Enter Ad category");
+        for (AdCategory adstypes : AdCategory.values()) {
+            System.out.println(" - "  + adstypes);
+        }
+        String userinputcategory = scanner.nextLine();
+        while (userinputcategory.isBlank()) {
+            System.out.println("Ad category is required");
+            userinputcategory = scanner.nextLine();
+        } adcategory = AdCategory.valueOf(userinputcategory.toUpperCase());
+
+
         // nextId должен быть больше любого существующего id
         for (Ad ad : storage.getAllAds()) {
             if (ad.getId() >= nextId) {
@@ -42,8 +54,8 @@ public class AddAction extends MenuAction {
             }
         }
 
-        storage.addAd(new Ad(nextId, title, price));
-        System.out.println("model.Ad is added");
+        storage.addAd(new Ad(nextId, title, price, adcategory));
+        System.out.println("Ad is added");
         nextId += 1;
 
     }

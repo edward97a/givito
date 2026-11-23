@@ -1,3 +1,4 @@
 
 7
 java:S1220""Move this file to a named package.8ôÇ–š4
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÕØ°ƒşÿÿÿÿ8Œ«úŸ4

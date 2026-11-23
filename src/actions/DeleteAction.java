@@ -13,6 +13,7 @@ public class DeleteAction extends MenuAction {
         this.scanner = scanner;
     }
 
+    @Override
     public void execute() {
         System.out.println("Please enter model.Ad ID to delete:");
         if (!scanner.hasNextInt()) {

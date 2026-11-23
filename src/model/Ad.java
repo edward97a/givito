@@ -1,19 +1,29 @@
 package model;
+import model.AdCategory;
 
 public class Ad {
    private int id;
    private String title;
    private int price;
+   private AdCategory adcategory;
 
-   public Ad(int id, String title, int price){
+   public Ad(int id, String title, int price, AdCategory category){
       this.id = id;
       this.title = title;
+      setCategory(category);
       setPrice(price);
-//      this.price = price;
    }
 
    public Ad(){
 
+   }
+
+   public AdCategory getCategory() {
+      return adcategory;
+   }
+
+   public void setCategory(AdCategory adcategory) {
+      this.adcategory = adcategory;
    }
 
    public String getTitle() {
