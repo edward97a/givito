@@ -1,4 +1,4 @@
-package actions;
+package menuItemList;
 
 public abstract class MenuAction {
     private String name;

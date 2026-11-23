@@ -1,4 +1,4 @@
-package actions;
+package menuItemList;
 
 import exceptions.AdNotFoundException;
 import model.Ad;

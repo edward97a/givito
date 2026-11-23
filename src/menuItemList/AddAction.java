@@ -1,4 +1,4 @@
-package actions;
+package menuItemList;
 
 import model.Ad;
 import model.AdCategory;

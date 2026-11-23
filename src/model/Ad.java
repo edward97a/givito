@@ -18,7 +18,10 @@ public class Ad {
 
    }
 
-   public AdCategory getCategory() {
+    public Ad(int maxIdcount, String title, int price) {
+    }
+
+    public AdCategory getCategory() {
       return adcategory;
    }
 

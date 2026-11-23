@@ -1,5 +1,5 @@
 package view;
-import actions.*;
+import menuItemList.*;
 import storage.AdStorage;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,22 +16,12 @@ public class ConsoleView {
     }
 
     public void showMenu() {
-        final List<MenuAction> actions = new ArrayList<>();
-        actions.add(new AddAction(scanner, storage));
-        actions.add(new ShowAllAction(storage));
-        actions.add(new DeleteAction(scanner, storage));
-        actions.add(new SearchAction(scanner, storage));
-        actions.add(new ModifyAction(scanner, storage));
-        actions.add(new LoadAdsAction(scanner, storage));
-        actions.add(new SaveAdsAction(scanner, storage));
-        actions.add(new DeleteAllFreeAction(scanner, storage));
-        actions.add(new ExitAction(scanner));
-
+        MenuItemProvider menuProvider = new MenuItemProvider(scanner, storage);
         int menu = -1;
         do {
             System.out.println("\n--- MENU ---");
-            for (int i = 0; i < actions.size(); i++) {
-                System.out.println(actions.get(i).getName());
+            for (int i = 0; i < menuProvider.size(); i++) {
+                System.out.println(menuProvider.getCommand(i).getName());
             }
 
             if (!scanner.hasNextInt()) {
@@ -57,8 +47,8 @@ public class ConsoleView {
                 break;
             }
 
-            if (menu > 0 && menu <= actions.size()) {
-                actions.get(menu - 1).execute();
+            if (menu > 0 && menu <= menuProvider.size()) {
+                menuProvider.getCommand(menu).execute();
             } else {
                 System.out.println("Incorrect input");
             }
