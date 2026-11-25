@@ -1,6 +1,8 @@
 package view;
 import menuItemList.*;
 import storage.AdStorage;
+import storage.AdStorageContract;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.Scanner;
 
 public class ConsoleView {
     private Scanner scanner;
-    private AdStorage storage;
+    private AdStorageContract storage;
 
     public ConsoleView(AdStorage storage) {
         this.scanner = new Scanner(System.in);
@@ -16,7 +18,7 @@ public class ConsoleView {
     }
 
     public void showMenu() {
-        MenuItemProvider menuProvider = new MenuItemProvider(scanner, storage);
+        MenuItemProvider menuProvider = new MenuItemProvider(scanner, (AdStorage) storage);
         int menu = -1;
         do {
             System.out.println("\n--- MENU ---");

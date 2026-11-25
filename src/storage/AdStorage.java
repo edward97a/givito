@@ -8,7 +8,7 @@ import java.util.*;
 
 import static java.util.Collections.unmodifiableList;
 
-public class AdStorage
+public class AdStorage implements AdStorageContract
 {
    private List<Ad> adList;
    private Map<Integer, Ad> adMap;
@@ -19,16 +19,18 @@ public class AdStorage
        adMap = new HashMap<>();
    }
 
+   @Override
    public void addAd(Ad ad) {
     adList.add(ad);
     adMap.put(ad.getId(), ad);
    }
 
+   @Override
    public List<Ad> getAllAds() {
-
        return unmodifiableList(adList);
    }
 
+   @Override
    public Ad findById(int id) {
        if (adMap.get(id) == null) {
            throw new AdNotFoundException(id + " " + "is missing");
@@ -37,6 +39,7 @@ public class AdStorage
 
    }
 
+    @Override
     public List<Ad> findByTitle(String title) {
         List<Ad> result = new ArrayList<>();
         for (int i = 0; i <= adList.size() - 1 ; i++) {
@@ -46,8 +49,8 @@ public class AdStorage
         }
         return result;
     }
-
-   public boolean deleteById(int id) {
+    @Override
+    public boolean deleteById(int id) {
        for (int i = 0; i <= adList.size() - 1; i++) {
            int currentId = adList.get(i).getId();
            if (currentId == id) {
@@ -59,6 +62,7 @@ public class AdStorage
        return false;
    }
 
+   @Override
    public void deleteAllFreeAds() {
        Iterator<Ad> it = adList.iterator();
        while (it.hasNext()) {
@@ -69,21 +73,22 @@ public class AdStorage
            }
        }
    }
-
-   public void saveAllAds(String filepath) throws IOException {
-    filemanager.saveAdsToFile(adList, filepath);
-   }
-
-   public void loadAllAds(String filepath) {
-       try {
-           List<Ad> newLoadedAds = filemanager.loadAdsFromFile(filepath);
-           adList.clear();
-           adMap.clear();
-           for (int i = 0; i <= newLoadedAds.size() - 1; i++) {
-               addAd(newLoadedAds.get(i));
-           }
-       } catch (IOException e) {
-           System.out.println("File cannot be loaded" + e.getMessage());
+       @Override
+       public void saveAllAds(String filepath) throws IOException {
+        filemanager.saveAdsToFile(adList, filepath);
        }
+
+       @Override
+       public void loadAllAds(String filepath) {
+           try {
+               List<Ad> newLoadedAds = filemanager.loadAdsFromFile(filepath);
+               adList.clear();
+               adMap.clear();
+               for (int i = 0; i <= newLoadedAds.size() - 1; i++) {
+                   addAd(newLoadedAds.get(i));
+               }
+           } catch (IOException e) {
+               System.out.println("File cannot be loaded" + e.getMessage());
+           }
    }
 }
