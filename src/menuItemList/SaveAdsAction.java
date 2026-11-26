@@ -1,15 +1,16 @@
 package menuItemList;
 
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.Scanner;
 import java.io.IOException;
 
 public class SaveAdsAction extends MenuAction {
     private Scanner scanner;
-    private AdStorage storage;
+    private AdStorageContract storage;
 
-    public SaveAdsAction(Scanner scanner, AdStorage storage) {
+    public SaveAdsAction(Scanner scanner, AdStorageContract storage) {
         super("7: Save Ads");
         this.scanner = scanner;
         this.storage = storage;

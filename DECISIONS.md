@@ -9,5 +9,5 @@
 
 ## Problems
 
-- New ID is calculated in 3 places: storage.FileManager, view.ConsoleView, storage.AdStorage. Fix later.
+- New ID is calculated in 3 places: storage.FileManager, view.ConsoleView, storage.JsonAdRepository. Fix later.
 - Tasks 4.5–4.8 not done yet.

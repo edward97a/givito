@@ -8,13 +8,13 @@ import java.util.*;
 
 import static java.util.Collections.unmodifiableList;
 
-public class AdStorage implements AdStorageContract
+public class JsonAdRepository implements AdStorageContract
 {
    private List<Ad> adList;
    private Map<Integer, Ad> adMap;
    FileManager filemanager = new FileManager();
 
-   public AdStorage () {
+   public JsonAdRepository() {
        adList = new ArrayList<>();
        adMap = new HashMap<>();
    }

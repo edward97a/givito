@@ -2,16 +2,17 @@ package menuItemList;
 
 import exceptions.AdNotFoundException;
 import model.Ad;
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class SearchAction extends MenuAction {
     private Scanner scanner;
-    private AdStorage storage;
+    private AdStorageContract storage;
 
-    public SearchAction(Scanner scanner, AdStorage storage) {
+    public SearchAction(Scanner scanner, AdStorageContract storage) {
         super("4: Search Ads");
         this.scanner = scanner;
         this.storage = storage;

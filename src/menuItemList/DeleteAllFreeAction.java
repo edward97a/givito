@@ -1,14 +1,15 @@
 package menuItemList;
 
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.Scanner;
 
 public class DeleteAllFreeAction extends MenuAction {
     private Scanner scanner;
-    private AdStorage storage;
+    private AdStorageContract storage;
 
-    public DeleteAllFreeAction(Scanner scanner, AdStorage storage) {
+    public DeleteAllFreeAction(Scanner scanner, AdStorageContract storage) {
         super("8: Delete all free ads");
         this.scanner = scanner;
         this.storage = storage;

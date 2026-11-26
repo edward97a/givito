@@ -1,14 +1,15 @@
 package menuItemList;
 
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.Scanner;
 
     public class LoadAdsAction extends MenuAction {
         private Scanner scanner;
-        private AdStorage storage;
+        private AdStorageContract storage;
 
-        public LoadAdsAction (Scanner scanner, AdStorage storage) {
+        public LoadAdsAction (Scanner scanner, AdStorageContract storage) {
             super("6: Load Ads");
             this.scanner = scanner;
             this.storage = storage;

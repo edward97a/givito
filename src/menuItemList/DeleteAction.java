@@ -1,13 +1,14 @@
 package menuItemList;
 
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.Scanner;
 
 public class DeleteAction extends MenuAction {
-    private AdStorage storage;
+    private AdStorageContract storage;
     private Scanner scanner;
-    public DeleteAction(Scanner scanner, AdStorage storage) {
+    public DeleteAction(Scanner scanner, AdStorageContract storage) {
         super("3: Delete Ad");
         this.storage = storage;
         this.scanner = scanner;

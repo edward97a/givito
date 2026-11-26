@@ -1,24 +1,22 @@
 package view;
 import menuItemList.*;
-import storage.AdStorage;
+import storage.JsonAdRepository;
 import storage.AdStorageContract;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleView {
     private Scanner scanner;
     private AdStorageContract storage;
 
-    public ConsoleView(AdStorage storage) {
+    public ConsoleView(AdStorageContract storage) {
         this.scanner = new Scanner(System.in);
         this.storage = storage;
     }
 
     public void showMenu() {
-        MenuItemProvider menuProvider = new MenuItemProvider(scanner, (AdStorage) storage);
+        MenuItemProvider menuProvider = new MenuItemProvider(scanner, storage);
         int menu = -1;
         do {
             System.out.println("\n--- MENU ---");

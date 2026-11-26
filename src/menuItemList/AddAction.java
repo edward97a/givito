@@ -2,16 +2,18 @@ package menuItemList;
 
 import model.Ad;
 import model.AdCategory;
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 import java.util.Scanner;
 
 public class AddAction extends MenuAction {
     private Scanner scanner;
-    private AdStorage storage;
+//    private JsonAdRepository storage;
+    private AdStorageContract storage;
     private int nextId = 1;
     private AdCategory adcategory;
 
-    public AddAction(Scanner scanner, AdStorage storage) {
+    public AddAction(Scanner scanner, AdStorageContract storage) {
         super("1: Add Ad");
         this.scanner = scanner;
         this.storage = storage;

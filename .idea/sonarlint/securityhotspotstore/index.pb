@@ -14,8 +14,6 @@ W
 'src/exceptions/AdNotFoundException.java,d\4\d4a95b2d0d2f26f7afbb8af4fe422129b3cd1c87
 S
 #src/exceptions/GivitoException.java,3\5\35153b027dd635386cc34411ba967c759cdab99b
-J
-src/storage/AdStorage.java,5\3\5353c85934bec003faebdcf76af7fb6d6b7a4983
 A
 src/model/Ad.java,2\4\24518ffd3f9780a94fde738a6f383555074c1b7b
 I

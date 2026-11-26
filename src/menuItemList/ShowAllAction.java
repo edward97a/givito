@@ -1,14 +1,15 @@
 package menuItemList;
 
 import model.Ad;
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
 
 import java.util.List;
 
 public class ShowAllAction extends MenuAction {
-    private AdStorage storage;
+    private AdStorageContract storage;
 
-   public ShowAllAction(AdStorage storage) {
+   public ShowAllAction(AdStorageContract storage) {
        super("2: Show all ads");
        this.storage = storage;
    }

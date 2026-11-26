@@ -2,14 +2,16 @@ package menuItemList;
 
 import exceptions.AdNotFoundException;
 import model.Ad;
-import storage.AdStorage;
+import storage.AdStorageContract;
+import storage.JsonAdRepository;
+
 import java.util.Scanner;
 
 public class ModifyAction extends MenuAction {
     private Scanner scanner;
-    private AdStorage storage;
+    private AdStorageContract storage;
 
-    public ModifyAction(Scanner scanner, AdStorage storage) {
+    public ModifyAction(Scanner scanner, AdStorageContract storage) {
         super("5: Modify Ad");
         this.scanner = scanner;
         this.storage = storage;
