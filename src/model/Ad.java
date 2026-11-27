@@ -19,6 +19,10 @@ public class Ad {
    }
 
     public Ad(int maxIdcount, String title, int price) {
+      this.id = maxIdcount;
+      this.title = title;
+      this.price = price;
+
     }
 
     public AdCategory getCategory() {
@@ -39,7 +43,6 @@ public class Ad {
    }
 
 //   public void setId(int id){
-//
 //      this.id = id;
 //   }
 
